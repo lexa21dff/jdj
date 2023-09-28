@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "2e5d6fd3-d428-45ab-b782-c83d6795b269",
+		"name": "05_SenaSoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26980875"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Listar_Categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_categorias"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Categoria_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_establecimiento/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Categorias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Educacional\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_categoria"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Asistencial\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_categorias/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Categoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_categorias/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Municipios",
+			"item": [
+				{
+					"name": "Listar_Municipio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_municipios"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Municipio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Risaralda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_municipio"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Municipio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Cundinamarca\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_municipio/8"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Municipio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_municipio/9"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_municipio/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manzanas",
+			"item": [
+				{
+					"name": "Listar_Manzanas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_manzanas"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Manzana_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_manzana/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Manzanas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "fd567",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "kjlkj",
+									"type": "text"
+								},
+								{
+									"key": "localidad",
+									"value": "Centro Inven",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "jj4",
+									"type": "text"
+								},
+								{
+									"key": "municipio_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8000/api/agregar_manzanas"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Manzanas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"codigo\": \"62131\",\r\n        \"nombre\": \"Cuidadoras\",\r\n        \"localidad\": \"Centro_invenciones\",\r\n        \"direccion\": \"Calle 5\",\r\n        \"municipio_id\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_manzana/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Manzana",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_manzana/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscador:_Manzana",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/buscador_manzanas/ras"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manzana_Servicio",
+			"item": [
+				{
+					"name": "Listar_Manzanas_Servicios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listado_servicios_manzanas"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Manzana_Servicio_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_servicio_manzana/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Manzana_Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manzana_id\" : 1,\r\n    \"servicio_id\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_servicio_manzana"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Manzanas_Servicios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manzana_id\": 2,\r\n    \"servicio_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_servicio_manzana/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Manzana_Servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_servicio_manzana/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "Listar_Servicios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_servicios"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Servicio_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_servicio/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"popoo\",\r\n    \"nombre\": \"Abogado\",\r\n    \"descripcion\":\"kjlkjlkj\",\r\n    \"fecha\": \"2023-09-10\",\r\n    \"hora\": \"14:26:05\",\r\n    \"categoria_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_servicio"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Servicios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"codigo\": \"fr06\",\r\n        \"nombre\": \"cuidan\",\r\n        \"descripcion\": \"sadadsd\",\r\n        \"fecha\": \"2023-09-27\",\r\n        \"hora\":\"10:11:00\",\r\n        \"categoria_id\": 1\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_servicio/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_servicio/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Establecimiento_Servicio",
+			"item": [
+				{
+					"name": "Listado_Establecimiento_Servicio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listado_establecimiento_manzana"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Establecimiento_servicio_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_establecimiento_manzana/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Establecimiento_Servicio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"establecimiento_id\":2,\r\n    \"servicio_id\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_establecimiento_manzana"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Establecimiento_Servicio",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"establecimiento_id\":2,\r\n    \"servicio_id\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_establecimiento_manzana/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Establecimiento_Servicio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_establecimiento_manzana/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Establecimientos",
+			"item": [
+				{
+					"name": "Listar_Establecimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_establecimientos"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar_Establecimiento_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/api/listar_establecimiento/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar_Establecimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"3424\",\r\n    \"nombre\":\"Catedral\",\r\n    \"responsable\": \"Carla M\",\r\n    \"direccion\": \"calle 8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/agregar_establecimiento"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_Establecimiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\":\"fghj\",\r\n    \"nombre\":\"Catedfg\",\r\n    \"responsable\": \"Carfgd\",\r\n    \"direccion\": \"calgf\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/actualizar_establecimiento/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_Establecimiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/eliminar_establecimiento/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Registro_Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n    \"tipo_documento\":\"Cedula\",\r\n    \"documento\":\"10026598\",\r\n    \"nombres\":\"Rebecca Patricia\",\r\n    \"apellidos\":\"Armstrong\",\r\n    \"telefono\":\"76767\",\r\n    \"correo_electronico\":\"becky@gmail.com\",\r\n    \"ciudad\":\"Popayan\",\r\n    \"direccion\":\"Calle 15\",\r\n    \"ocupacion\":\"Dentista\",\r\n    \"servicios_ocupar\":\"Medico\",\r\n    \"password\":\"123456\",\r\n    \"password_confirmation\":\"123456\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/registro_usuario"
+					},
+					"response": []
+				},
+				{
+					"name": "Inicio_Sesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo_electronico\":\"becky@gmail.com\",\r\n    \"password\": 123456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/api/inicio_sesion"
+					},
+					"response": []
+				},
+				{
+					"name": "Cerrar_Sesion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "1|PqTaf57nUK9dNZH7NP1rTxfKIcwS51Z7dP6KptNb"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8000/api/cerrar_sesion"
+					},
+					"response": []
+				},
+				{
+					"name": "Restablecer_Contraseña",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
